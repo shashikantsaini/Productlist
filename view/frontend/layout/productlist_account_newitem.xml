@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © GameChange, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="customer_account"/>
+    <head>
+        <script src="GameChange_ProductList::js/common.js" async="async"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="GameChange\ProductList\Block\Account\NewItem" name="gamechange_productlist_account_newitem_content" as="product_list" template="GameChange_ProductList::product/newlist.phtml"/>
+        </referenceContainer>
+        <referenceBlock name="gamechange_productlist_account_newitem_content">
+            <arguments>
+                <argument name="viewModel" xsi:type="object">Magento\Catalog\ViewModel\Product\OptionsData</argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>
+

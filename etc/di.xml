@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © GameChange, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Block\Product\ListProduct" type="GameChange\ProductList\Block\Account\NewItem" />
+    <preference for="Magento\Catalog\Model\Config\Source\ListMode" type="GameChange\ProductList\Model\Config\Source\ListMode" />    
+    <preference for="Magento\Catalog\Helper\Product\ProductList" type="GameChange\ProductList\Helper\Product\ProductList" />
+</config>
